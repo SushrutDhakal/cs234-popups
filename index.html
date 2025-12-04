@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS 234 - Module Questions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <span class="logo-text">CS 234</span>
+            <span class="logo-sub">Data Structures</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" data-module="random" class="nav-link nav-link-random">Random</a></li>
+            <li class="nav-divider"></li>
+            <li><a href="#" data-module="1" class="nav-link active">Module 1</a></li>
+            <li><a href="#" data-module="2" class="nav-link">Module 2</a></li>
+            <li><a href="#" data-module="3" class="nav-link">Module 3</a></li>
+            <li><a href="#" data-module="4" class="nav-link">Module 4</a></li>
+            <li><a href="#" data-module="5" class="nav-link">Module 5</a></li>
+            <li><a href="#" data-module="6" class="nav-link">Module 6</a></li>
+            <li><a href="#" data-module="7" class="nav-link">Module 7</a></li>
+            <li><a href="#" data-module="8" class="nav-link">Module 8</a></li>
+            <li><a href="#" data-module="9" class="nav-link">Module 9</a></li>
+            <li><a href="#" data-module="10" class="nav-link">Module 10</a></li>
+        </ul>
+        <div class="nav-footer">
+            <span class="question-count" id="questionCount">0 questions</span>
+        </div>
+    </nav>
+
+    <main class="content">
+        <header class="content-header">
+            <div class="header-row">
+                <div>
+                    <h1 id="moduleTitle">Module 1</h1>
+                    <p id="moduleTopic" class="module-topic">Introduction to ADTs</p>
+                </div>
+                <button id="shuffleBtn" class="shuffle-btn" style="display: none;">
+                    <span class="shuffle-icon">&#8645;</span> Shuffle
+                </button>
+            </div>
+        </header>
+
+        <div class="questions-container" id="questionsContainer">
+            <!-- Questions will be injected here -->
+        </div>
+
+        <div class="navigation-buttons">
+            <button id="prevModule" class="nav-btn">
+                <span class="arrow">←</span> Previous Module
+            </button>
+            <button id="nextModule" class="nav-btn">
+                Next Module <span class="arrow">→</span>
+            </button>
+        </div>
+    </main>
+
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
